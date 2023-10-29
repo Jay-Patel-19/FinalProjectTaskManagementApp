@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CRUDTaskActivity">
+    tools:context=".CRUDTaskActivity"
+    >
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -14,12 +15,14 @@
         >
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarAddTask"
-            android:title="New Task"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/toolbar"
+            app:titleTextColor="@android:color/white"
+            app:title="Edit Task"
             android:background="?attr/colorPrimary"
-             />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            />
 
     </com.google.android.material.appbar.AppBarLayout>
 
