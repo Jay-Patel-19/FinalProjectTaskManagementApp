@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "637019411640",
+    "project_id": "finalprojecttaskmanageme-519bd",
+    "storage_bucket": "finalprojecttaskmanageme-519bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637019411640:android:6b40b2b1503af2600dd04d",
+        "android_client_info": {
+          "package_name": "com.example.finalprojecttaskmanagementapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAUbfuQQpAYdJ3x3DDZnaDBjnfZuKHnN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
