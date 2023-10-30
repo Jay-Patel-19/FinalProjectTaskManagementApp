@@ -13,8 +13,9 @@ import java.util.Date;
 
 public class UserUtility {
 
-    public  boolean isSuccess;
-    private static FirebaseAuth mAuth;
+    public  boolean isSuccess = true;
+    private static FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
     private static DatabaseReference mDatabase;
 
     boolean isAdmin;
