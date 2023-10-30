@@ -1,54 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
-        app:titleTextColor="@android:color/white"
-        app:title="User Dashboard"
-        android:background="?attr/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <!-- Add a LinearLayout to contain the clickable TextViews -->
-    <LinearLayout
-        android:layout_width="match_parent"
+    <!-- Use Buttons instead of TextViews -->
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
-        android:orientation="vertical"
-        android:layout_margin="16dp">
+        android:text="High"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:onClick="onHighClick" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="High"
-            android:textSize="20sp"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:onClick="onHighClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:onClick="onLowClick" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Low"
-            android:textSize="20sp"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:onClick="onLowClick" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Medium"
-            android:textSize="20sp"
-            android:textColor="@android:color/black"
-            android:clickable="true"
-            android:onClick="onMediumClick" />
-    </LinearLayout>
-</RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:clickable="true"
+        android:onClick="onMediumClick" />
+</LinearLayout>
