@@ -13,10 +13,11 @@
         android:theme="@style/Theme.FinalProjectTaskManagementApp"
         tools:targetApi="31">
         <activity
-            android:name=".UserTaskViewListActivity"
-            android:exported="false" />
+            android:name=".ui.login.LoginActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_login2" />
         <activity
-            android:name=".user_task_list_view"
+            android:name=".TaskDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
@@ -35,15 +36,17 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
         </activity>
     </application>
 
