@@ -80,7 +80,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
 
             <Button
-                android:id="@+id/gotoRegister"
+                android:id="@+id/gotoSignUp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

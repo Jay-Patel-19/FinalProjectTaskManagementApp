@@ -37,14 +37,14 @@
             android:background="@color/DarkGray">
 
             <EditText
-                android:id="@+id/registerName"
+                android:id="@+id/txtFirstname"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:ems="10"
-                android:hint="Full Name"
+                android:hint="First Name"
                 android:textColorHint="@color/LightGray"
                 android:textColor="@color/LightGray"
                 android:inputType="textPersonName"
@@ -53,23 +53,38 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/registerEmail"
+                android:id="@+id/txtLastname"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:ems="10"
-                android:hint="Email Address"
+                android:hint="Last Name"
                 android:textColorHint="@color/LightGray"
                 android:textColor="@color/LightGray"
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerName" />
+                app:layout_constraintTop_toBottomOf="@+id/txtFirstname" />
 
             <EditText
-                android:id="@+id/registerPassword"
+                android:id="@+id/txtEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="Email"
+                android:textColorHint="@color/LightGray"
+                android:textColor="@color/LightGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtLastname" />
+
+            <EditText
+                android:id="@+id/txtPassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -82,23 +97,7 @@
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
-
-            <EditText
-                android:id="@+id/registerPhone"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:ems="10"
-                android:hint="Phone Number"
-                android:textColorHint="@color/LightGray"
-                android:textColor="@color/LightGray"
-                android:inputType="phone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
 
 
@@ -112,7 +111,7 @@
                 android:text="Create Account"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerPhone" />
+                app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
             <Button
                 android:id="@+id/gotoLogin"
