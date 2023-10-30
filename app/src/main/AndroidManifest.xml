@@ -13,6 +13,12 @@
         android:theme="@style/Theme.FinalProjectTaskManagementApp"
         tools:targetApi="31">
         <activity
+            android:name=".UserTaskViewListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user_task_list_view"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity

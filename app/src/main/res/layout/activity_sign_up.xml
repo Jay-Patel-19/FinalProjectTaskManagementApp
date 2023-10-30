@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUpActivity"
-    android:background="@color/DarkGray"
     >
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -34,7 +33,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/DarkGray">
+            >
 
             <EditText
                 android:id="@+id/registerName"
@@ -45,8 +44,8 @@
                 android:layout_marginEnd="16dp"
                 android:ems="10"
                 android:hint="Full Name"
-                android:textColorHint="@color/LightGray"
-                android:textColor="@color/LightGray"
+                android:textColorHint="@color/Black"
+                android:textColor="@color/Black"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -61,8 +60,8 @@
                 android:layout_marginEnd="16dp"
                 android:ems="10"
                 android:hint="Email Address"
-                android:textColorHint="@color/LightGray"
-                android:textColor="@color/LightGray"
+                android:textColorHint="@color/Black"
+                android:textColor="@color/Black"
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -77,8 +76,8 @@
                 android:layout_marginEnd="16dp"
                 android:ems="10"
                 android:hint="Password"
-                android:textColorHint="@color/LightGray"
-                android:textColor="@color/LightGray"
+                android:textColorHint="@color/Black"
+                android:textColor="@color/Black"
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -93,8 +92,8 @@
                 android:layout_marginEnd="16dp"
                 android:ems="10"
                 android:hint="Phone Number"
-                android:textColorHint="@color/LightGray"
-                android:textColor="@color/LightGray"
+                android:textColorHint="@color/Black"
+                android:textColor="@color/Black"
                 android:inputType="phone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
