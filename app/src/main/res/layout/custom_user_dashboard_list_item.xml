@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@android:color/white"
+        app:title="User Dashboard"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <!-- Add a LinearLayout to contain the clickable TextViews -->
     <LinearLayout
