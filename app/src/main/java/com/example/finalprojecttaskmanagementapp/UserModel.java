@@ -56,7 +56,7 @@ public class UserModel {
         this.user_password = user_password;
     }
 
-    public boolean isAdmin() {
+    public boolean getAdmin() {
         return isAdmin;
     }
 
