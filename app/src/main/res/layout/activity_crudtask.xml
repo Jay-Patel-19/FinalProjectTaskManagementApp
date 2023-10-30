@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".CRUDTaskActivity"
+    android:background="@color/DarkGray"
     >
 
     <com.google.android.material.appbar.AppBarLayout
@@ -29,19 +30,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginBottom="4dp"
         android:text="Task Name"
-        android:textColor="@color/colorAccent"
-        android:textSize="16sp" />
+        android:textColor="@color/LightGray"
+        android:textSize="16dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:id="@+id/titleInpLay"
-        android:hintTextColor="@color/colorAccent"
-        android:boxStrokeColor="@color/colorAccent"
+        android:textColorHint="@color/LightGray"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp">
 
@@ -49,6 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Task title"
+            android:textColorHint="@color/LightGray"
+            android:textColor="@color/LightGray"
             android:paddingStart="8dp"
             android:inputType="textCapWords"
             android:paddingEnd="8dp"
@@ -61,15 +64,15 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="4dp"
         android:text="What is to be done?"
-        android:textColor="@color/colorAccent"
+
+        android:textColor="@color/LightGray"
         android:textSize="16sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:hintTextColor="@color/colorAccent"
-        android:boxStrokeColor="@color/colorAccent"
+        android:textColorHint="@color/LightGray"
         android:layout_marginEnd="16dp"
         android:id="@+id/taskInpLay"
         android:layout_marginBottom="16dp">
@@ -91,17 +94,19 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="4dp"
         android:text="Priority"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/LightGray"
         android:textSize="16sp" />
 
     <Spinner
         android:id="@+id/prioritySpinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
+        android:spinnerMode="dropdown"
+        android:outlineAmbientShadowColor="@color/LightGray"
+        android:outlineSpotShadowColor="@color/LightGray"
         android:hint="Select Priority"
-        android:hintTextColor="@color/colorAccent"
-        android:boxStrokeColor="@color/colorAccent"
+        android:backgroundTint="@color/LightGray"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp" />
 
@@ -112,15 +117,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="4dp"
         android:text="Due Date"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/LightGray"
         android:textSize="16sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:hintTextColor="@color/colorAccent"
-        android:boxStrokeColor="@color/colorAccent"
+        android:textColorHint="@color/LightGray"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp">
 
@@ -133,7 +137,7 @@
             android:cursorVisible="false"
             android:drawablePadding="8dp"
             android:drawableEnd="@drawable/ic_date_range_black_24dp"
-            android:drawableTint="@color/colorAccent"
+            android:drawableTint="@color/LightGray"
             android:focusable="false"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
@@ -161,7 +165,6 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_gravity="end"
-        android:cornerRadius="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
